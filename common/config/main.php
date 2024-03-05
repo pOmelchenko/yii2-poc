@@ -1,5 +1,6 @@
 <?php
-$config = [
+
+return [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -17,5 +18,3 @@ $config = [
         ]
     ]
 ];
-
-return $config;
