@@ -10,11 +10,12 @@ $config = [
             'class' => \yii\caching\FileCache::class,
         ],
     ],
-];
-
-$config['bootstrap'][] = 'my';
-$config['modules']['my'] = [
-    'class' => \common\modules\MyModule\Module::class,
+    'bootstrap' => ['my'],
+    'modules' => [
+        'my' => [
+            'class' => \common\modules\MyModule\Module::class,
+        ]
+    ]
 ];
 
 return $config;
